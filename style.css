@@ -2,6 +2,7 @@ body {
     height: 95vh;
     display: flex;
     justify-content: center;
+    
 }
 
 .calculatorContainer {
@@ -31,6 +32,14 @@ body {
     box-sizing: border-box;
     border: 2px solid black;
     border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 6vmax;
+    text-align: end;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-sizing: border-box;
+    padding-right: 2vw;
 }
 
 .buttonContainer{
@@ -53,5 +62,6 @@ body {
     flex: 1;
     border-radius: 5px;
     font-size: 4vmax;
+    font-family: 'Courier New', Courier, monospace;
 }
 
