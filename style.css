@@ -33,7 +33,7 @@ body {
     border: 2px solid black;
     border-radius: 5px;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 6vmax;
+    font-size: 4vmax;
     text-align: end;
     display: flex;
     justify-content: flex-end;
