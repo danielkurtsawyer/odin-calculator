@@ -12,6 +12,7 @@ numbers.forEach(num => num.addEventListener('click', processNumber));
 operators.forEach(operator => operator.addEventListener('click', processOperator));
 clearButton.addEventListener('click', clearDisplay);
 equalsButton.addEventListener('click', processEquals);
+decimal.addEventListener('click', processDecimal);
 
 function processNumber(e){
     // if an operator is undefined but we have a num1 value, then we are starting a new series of operations and must clear the display and the saved variables
@@ -39,6 +40,18 @@ function processOperator(e){
 
     operator = op;
     lastPressed = 'operator'
+}
+
+function processDecimal(e){
+    // if an operator is undefined but we have a num1 value, then we are starting a new series of operations and must clear the display and the saved variables
+    if(operator === undefined && num1 !== undefined) clearDisplay();
+    // if either equals or operator was last pressed, we can rewrite the display
+    if(num1 && (lastPressed === 'operator' || lastPressed === 'equals')) display.textContent = '0';
+
+    if(!display.textContent.includes('.')){
+        display.textContent += '.';
+    }
+    lastPressed = 'decimal';
 }
 
 function processEquals(e){
