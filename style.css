@@ -64,3 +64,11 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 
+.operator {
+    background-color: black;
+    color: white;
+}
+
+.clear {
+    background-color: orange;
+}
